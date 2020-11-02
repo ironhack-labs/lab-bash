@@ -42,8 +42,6 @@ Check the contents of the sed.txt file using `cat` command.
 13. Find who is the system user. 
 14. Find the current path of the directory you are in.
 15. List all files with the extension `.txt` in lorem folder.
-16. Count the rows in `sed.txt` file from lorem folder. Look concatenate `cat` and `wc` with the pipe `|`.
-17. Count the **files** start with `lorem` in all directories.
 
 
 ## Bonus
