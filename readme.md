@@ -4,11 +4,11 @@
 
 ## Introduction
 
-We are going to practice with [`bash`](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>), a shell and command-line language!
+In this lab we are going to practice with [`bash`](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>), a shell and command-line language!
 
 ## Setup
 
-1. Clone the folder "lab-bash" to your machine and navigate to it folder.
+1. Fork the repo in your git hub account and then clone the folder "lab-bash" to your machine and navigate to it folder.
 
 2. Check the contents of the folder using the "ls" command
 
@@ -16,7 +16,7 @@ We are going to practice with [`bash`](<https://en.wikipedia.org/wiki/Bash_(Unix
 $ ls
 ```
 
-and you should see:
+and you should see the following:
 
 ```shell
 exercises  inputs  lorem  lorem-copy  modules  outputs  README.md
@@ -26,7 +26,7 @@ exercises  inputs  lorem  lorem-copy  modules  outputs  README.md
 
 ## Exercises
 
-1. Using the echo command print in console "Hello World".
+1. Using the echo command print in console "Hello World". Here is some info about echo command [https://discuss.codecademy.com/t/what-are-practical-uses-of-the-echo-command/394788]
 2. Create a new directory called `new_dir`.
 3. Delete/Remove the directory `new_dir`.
 4. Copy the file `sed.txt` from the `lorem` folder and paste it to the folder `lorem-copy` folder.
@@ -42,6 +42,8 @@ Check the contents of the sed.txt file using `cat` command.
 13. Find who is the system user. 
 14. Find the current path of the directory you are in.
 15. List all files with the extension `.txt` in lorem folder.
+16. Count the rows in `sed.txt` file from lorem folder. Look concatenate `cat` and `wc` with the pipe `|`.
+17. Count the **files** which start with `lorem` in all directories.
 
 
 ## Bonus
