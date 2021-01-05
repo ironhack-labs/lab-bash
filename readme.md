@@ -52,4 +52,3 @@ Check the contents of the sed.txt file using `cat` command.
 21. Print that variable.
 22. Create a new directory named with variable `name`.
 23. Remove that directory.
-24. For each file in `lorem` folder, print the number of characters of its name.
