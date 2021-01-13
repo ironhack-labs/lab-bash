@@ -1,0 +1,154 @@
+user@portatile1 MINGW64 ~ (master)
+$ git clone https://github.com/rvergnani/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (40/40), done.
+remote: Compressing objects: 100% (30/30), done.
+Receivinremote: Total 40 (delta 14), reused 23 (delta 6), pack-reused 0
+Receiving objects: 100% (40/40), 10.93 KiB | 699.00 KiB/s, done.
+Resolving deltas: 100% (14/14), done.
+
+
+user@portatile1 MINGW64 ~ (master)
+$ ls
+'3D Objects'/           'Menu Avvio'@                                                                                   OneDrive/                     lab-bash/
+ AppData/                Microsoft/                                                                                     Pictures/                     ntuser.dat.LOG1
+ Contacts/               MicrosoftEdgeBackups/                                                                          Recenti@                      ntuser.dat.LOG2
+ Cookies@                Modelli@                                                                                      'Risorse di rete'@             ntuser.ini
+'Dati applicazioni'@     Music/                                                                                        'Risorse di stampa'@          'robin-hood RV.ipynb'
+ Desktop/                NTUSER.DAT                                                                                     Searches/                    'rock-paper-scissors RV.ipynb'
+ Documenti@              NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TM.blf                                        SendTo@                      'snail-and-well RV.ipynb'
+ Documents/              NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TMContainer00000000000000000001.regtrans-ms   Videos/                       snail-and-well.ipynb
+ Downloads/              NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TMContainer00000000000000000002.regtrans-ms   anaconda3/                    super-duper-robot/
+ Favorites/              NTUSER.bak                                                                                    'bus RV.ipynb'                'temperature RV.ipynb'
+'Impostazioni locali'@   NTUSER.rhk.LOG1                                                                                data-prework/
+ Links/                  NTUSER.rhk.LOG2                                                                               'duel-of-sorcerers RV.ipynb'
+
+user@portatile1 MINGW64 ~ (master)
+$ cd lab-bash
+
+user@portatile1 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+
+
+user@portatile1 MINGW64 ~/lab-bash (master)
+$ echo "Hello world"
+Hello world
+
+user@portatile1 MINGW64 ~/lab-bash (master)
+$ mkdir new_dir
+
+user@portatile1 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  new_dir/  outputs/  readme.md
+
+user@portatile1 MINGW64 ~/lab-bash (master)
+$ rm -rf new_dir
+
+user@portatile1 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+
+
+user@portatile1 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ cp sed.txt  ~/lab-bash/lorem-copy
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ cp lorem.txt ~/lab-bash/lorem-copy; cp at.txt ~/lab-bash/lorem-copy
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ cat "sed.txt"
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ cat "at.txt"
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ head -n 3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ tail -n 3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Homo homini lupus
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ echo "Homo homini lupus" >> sed.txt
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ tail -n 3 sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus
+
+
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ sed -i -r "s/ET/et/g" at.txt
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+Et harum quidem rerum facilis est et expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ whoami
+user
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ git config --global user.name
+Raffaele Vergnani
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ pwd
+/c/Users/user/lab-bash/lorem
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ ls *txt
+at.txt  lorem.txt  sed.txt
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ wc -l at.txt
+10 at.txt
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ ls -1 | wc -l
+5
+
+
+
+
+Bonus:
+
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ mkdir name
+
+user@portatile1 MINGW64 ~/lab-bash/lorem (master)
+$ rm -rf name
