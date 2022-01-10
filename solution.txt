@@ -1,0 +1,675 @@
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ echo: Hello World
+bash: echo:: command not found
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ echo Hello
+Hello
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ echo Hello World
+Hello World
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ mkdir new_dir
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  new_dir/  outputs/  readme.md
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ rmdir new_dir/
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ cp lorem/sed.txt lorem
+lorem/      lorem-copy/
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ cp lorem/sed.txt lorem-copy/sed.txt
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ cd lorem-copy
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ ls
+dummy_file.txt  sed.txt
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ cd ..
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ cd lorem
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cp at.txt lorem-copy/at.txt ; cp at.txte lorem-copy/at.txte ; cp lorem.txt lor
+cp: cannot create regular file 'lorem-copy/at.txt': No such file or directory
+cp: cannot create regular file 'lorem-copy/at.txte': No such file or directory
+cp: cannot create regular file 'lorem-copy/lorem.txt': No such file or directory
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cp sed.txt lorem-copy/sed.txt
+cp: cannot create regular file 'lorem-copy/sed.txt': No such file or directory
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cd ..
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ cp lorem/at.txt lorem-copy/at.txt; cp lorem/at.txte lorem-copy/at.txte; cp lorm.txt
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ cd lorem-copy/
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ ls
+at.txt  at.txte  dummy_file.txt  lorem.txt  sed.txt
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ cd ..
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ cd lorem
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecxplicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliqu
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit la
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderitsse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cat at.txt; cat lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praese
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est l
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repell
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saep
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatib
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ie magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserum.
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cat lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ie magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserum.
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cat 3 sed.txt
+cat: 3: No such file or directory
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecxplicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliqu
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit la
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderitsse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cat --help
+Usage: cat [OPTION]... [FILE]...
+Concatenate FILE(s) to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+  -A, --show-all           equivalent to -vET
+  -b, --number-nonblank    number nonempty output lines, overrides -n
+  -e                       equivalent to -vE
+  -E, --show-ends          display $ at end of each line
+  -n, --number             number all output lines
+  -s, --squeeze-blank      suppress repeated empty output lines
+  -t                       equivalent to -vT
+  -T, --show-tabs          display TAB characters as ^I
+  -u                       (ignored)
+  -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB
+      --help     display this help and exit
+      --version  output version information and exit
+
+Examples:
+  cat f - g  Output f's contents, then standard input, then g's contents.
+  cat        Copy standard input to standard output.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/cat>
+or available locally via: info '(coreutils) cat invocation'
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cat -n sed.txt
+     1  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanti
+     2  totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi a sunt explicabo.
+     3  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fug
+     4  sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nes
+     5  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consect
+     6  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnm.
+     7  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis sus
+     8  nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure repre velit esse quam nihil molestiae consequatur,
+     9  vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ awk 'NR==3' sed.txt
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ awk 'NR>=0' && 'NR<=3' sed.txt
+
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ awk '$1>=0' && '$1<=3' sed.txt
+
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecxplicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliqu
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit la
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderitsse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cd..
+bash: cd..: command not found
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cd ..
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ cd lorem-copy/
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecxplicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliqu
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit la
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderitsse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ less --help
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ less sed.txt
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ cat -n sed.txt
+     1  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanti
+     2  totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi a sunt explicabo.
+     3  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fug
+     4  sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nes
+     5  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consect
+     6  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnm.
+     7  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis sus
+     8  nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure repre velit esse quam nihil molestiae consequatur,
+     9  vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n -e 1,3p sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecxplicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n -3 7,9p sed.txt
+sed: unknown option -- 3
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -b, --binary
+                 open files in binary mode (CR+LFs are not processed specially)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n -e 7,9p sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit la
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderitsse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ echo "Homo homini lupus." | tee -a sed.txt
+Homo homini lupus.
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecxplicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliqu
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit la
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderitsse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed --help
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -b, --binary
+                 open files in binary mode (CR+LFs are not processed specially)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+E-mail bug reports to: <bug-sed@gnu.org>.
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n -e &p sed.txt
+[1] 2120
+sed: option requires an argument -- e
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -b, --binary
+                 open files in binary mode (CR+LFs are not processed specially)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+bash: p: command not found
+[1]+  Exit 1                  sed -n -e
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n '&p' sed.txt
+sed: -e expression #1, char 1: unknown command: `&'
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n '$p' sed.txt
+Homo homini lupus.
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n '$-3p' sed.txt
+sed: -e expression #1, char 2: unknown command: `-'
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n '($-3),$p' sed.txt
+sed: -e expression #1, char 1: unknown command: `('
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n '5,$p' sed.txt
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliqu
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit la
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderitsse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n '3$,$p' sed.txt
+sed: -e expression #1, char 2: unknown command: `$'
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n '-2,$p' sed.txt
+sed: unknown option -- 2
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -b, --binary
+                 open files in binary mode (CR+LFs are not processed specially)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n '$,-2p' sed.txt
+sed: -e expression #1, char 3: unexpected `,'
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n '8$p' sed.txt
+sed: -e expression #1, char 2: unknown command: `$'
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ sed -n '8,$p' sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderitsse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem-copy
+$ cd ..
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ cd lorem
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ sed -i 's/et/ET/g' at.txt
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praese
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est l
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repell
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saep
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatib
+alias consequatur aut perferendis doloribus asperiores repellat
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ whois
+bash: whois: command not found
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ who
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ who --help
+Usage: who [OPTION]... [ FILE | ARG1 ARG2 ]
+Print information about users who are currently logged in.
+
+  -a, --all         same as -b -d --login -p -r -t -T -u
+  -b, --boot        time of last system boot
+  -d, --dead        print dead processes
+  -H, --heading     print line of column headings
+  -l, --login       print system login processes
+      --lookup      attempt to canonicalize hostnames via DNS
+  -m                only hostname and user associated with stdin
+  -p, --process     print active processes spawned by init
+  -q, --count       all login names and number of users logged on
+  -r, --runlevel    print current runlevel
+  -s, --short       print only name, line, and time (default)
+  -t, --time        print last system clock change
+  -T, -w, --mesg    add user's message status as +, - or ?
+  -u, --users       list users logged in
+      --message     same as -T
+      --writable    same as -T
+      --help     display this help and exit
+      --version  output version information and exit
+
+If FILE is not specified, use /var/run/utmp.  /var/log/wtmp as FILE is common.
+If ARG1 ARG2 given, -m presumed: 'am i' or 'mom likes' are usual.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/who>
+or available locally via: info '(coreutils) who invocation'
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ who -a
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ who -a -
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ users
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ who -u
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ w
+bash: w: command not found
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ whoami
+carlo
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ where
+La sintaxis de este comando es:
+
+WHERE [/R dir] [/Q] [/F] [/T] patrón...
+
+Descripción:
+    Muestra la ubicación de archivos que coinciden con el patrón de búsqueda.
+    De manera predeterminada, la búsqueda se realiza en el directorio actual y
+    en las rutas especificadas por la variable de entorno PATH.
+
+Lista de parámetros:
+    /R       Busca recursivamente y muestra los archivos que coinciden con el
+             patrón dado, comenzando por el directorio especificado.
+
+    /Q       Devuelve solo el código de salida, sin mostrar la lista
+             de archivos coincidentes (modo silencioso).
+
+    /F       Muestra el nombre de archivo coincidente entre dobles comillas.
+
+    /T       Muestra el tamaño de archivo, la última fecha y hora de
+             modificación de todos los archivos coincidentes.
+
+    patrón   Especifica el patrón de búsqueda con el que deben coincidir los
+             archivos. Se pueden usar los comodines * y ? en el patrón.
+             Los formatos "$env:patrón" y "path:patrón" también pueden
+             especificarse, donde "env" es una variable de entorno y
+             la búsqueda se realiza en las rutas de acceso específicas de la
+             variable de entorno "env". No se deben usar esos formatos
+             con /R. La búsqueda también se realiza anexando
+             extensiones de la variable PATHEXT al patrón.
+
+     /?      Muestra este mensaje de ayuda.
+
+  Nota: la herramienta devuelve un nivel de error 0 si la búsqueda
+        arrojó resultados, 1 si la búsqueda no arrojó resultados y
+        2 si hay errores.
+
+Ejemplos:
+    WHERE /?
+    WHERE mi_nombre_de_archivo1 mi_archivo????.*
+    WHERE $windir:*.*
+    WHERE /R c:\windows *.exe *.dll *.bat
+    WHERE /Q ??.???
+    WHERE "c:\windows;c:\windows\system32:*.dll"
+    WHERE /F /T *.dll
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ echo $PWD
+/d/IronHack/Git/Bash/lorem
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ ls *.txt
+at.txt  lorem.txt  sed.txt
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ wc -l sed.txt | cat
+9 sed.txt
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash/lorem
+$ cd ..
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ ls */lorem* | wc -w | cat
+2
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ ls */lorem*
+lorem-copy/lorem.txt  lorem/lorem.txt
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ echo Enter your name; read name
+Enter your name
+Carlos
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ echo $name
+Carlos
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ mkdir $name
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ ls
+Carlos/  exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ rmdir $name
+
+carlo@DESKTOP-MTNRG4V MINGW64 /d/IronHack/Git/Bash (main)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
