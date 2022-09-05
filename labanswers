@@ -1,0 +1,249 @@
+(base) Lucas-MacBook-Pro:~ lucaalfano$ cd IH-labs
+(base) Lucas-MacBook-Pro:IH-labs lucaalfano$ ls
+(base) Lucas-MacBook-Pro:IH-labs lucaalfano$ git clone https://github.com/lucalfano/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 40 (delta 14), reused 10 (delta 10), pack-reused 17
+Receiving objects: 100% (40/40), 11.61 KiB | 5.81 MiB/s, done.
+Resolving deltas: 100% (14/14), done.
+(base) Lucas-MacBook-Pro:IH-labs lucaalfano$ ls
+lab-bash
+(base) Lucas-MacBook-Pro:IH-labs lucaalfano$ cd lab-dash
+-bash: cd: lab-dash: No such file or directory
+(base) Lucas-MacBook-Pro:IH-labs lucaalfano$ cd lab-bash
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		outputs
+inputs		lorem-copy	readme.md
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ echo 'hello world'
+hello world
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ mkdir new_dir
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ git add . 
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cp sed.txt lorem-copy
+cp: sed.txt: No such file or directory
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd sed.txt lorem-copy
+-bash: cd: sed.txt: Not a directory
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cp sed.txt lorem-copy
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd lored-copy
+-bash: cd: lored-copy: No such file or directory
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd lorem-copy
+-bash: cd: lorem-copy: Not a directory
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd lorem
+-bash: cd: lorem: No such file or directory
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ ls
+at.txt		at.txte		lorem-copy	lorem.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd lorem-copy
+-bash: cd: lorem-copy: Not a directory
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd lab-bash
+-bash: cd: lab-bash: No such file or directory
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd lab-bash
+-bash: cd: lab-bash: No such file or directory
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ ls
+at.txt		at.txte		lorem-copy	lorem.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cp sed.txt lorem-copy
+cp: sed.txt: No such file or directory
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cp sed.txt lorem lorem-copy
+cp: sed.txt: No such file or directory
+cp: lorem is a directory (not copied).
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cp sed.txt lorem-copy
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem-copy
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ ls
+dummy_file.txt
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ cd .. 
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem-copy
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ ls
+dummy_file.txt
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ ls
+at.txt		at.txte		lorem-copy	lorem.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd lorem-copy
+-bash: cd: lorem-copy: Not a directory
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ ls
+at.txt		at.txte		lorem-copy	lorem.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ rm lorem-copy
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cp sed.txt lab-bash/lorem-copy
+cp: lab-bash/lorem-copy: No such file or directory
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd .. 
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cp sed.txt ../lorem-copy
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd .. 
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem-copy
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ ls
+dummy_file.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cp at.txt;at.txte ../lorem-copy
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+-bash: at.txte: command not found
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd .. 
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd .. 
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem-copy
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ ls
+dummy_file.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cp at.txt ../lorem-copy; at.txte ../lorem-copy
+-bash: at.txte: command not found
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem-copy
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ ls
+at.txt		dummy_file.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cp at.txt ../lorem-copy; cp at.txte ../lorem-copy
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd .. 
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem-copy
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ ls
+at.txt		at.txte		dummy_file.txt	sed.txt
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ cat at.txt cat lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+cat: cat: No such file or directory
+cat: lorem.txt: No such file or directory
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem
+(base) Lucas-MacBook-Pro:lorem lucaalfano$ cat at.txt cat lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+cat: cat: No such file or directory
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.(base) Lucas-MacBook-Pro:lorem lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ cd lorem-copy
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) Lucas-MacBook-Pro:lorem-copy lucaalfano$ cd ..
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ git add .
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   lorem-copy/at.txt
+	new file:   lorem-copy/at.txte
+	new file:   lorem-copy/sed.txt
+
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ git commit -m 'bash answers'
+[master 1dd2a53] bash answers
+ 3 files changed, 29 insertions(+)
+ create mode 100755 lorem-copy/at.txt
+ create mode 100755 lorem-copy/at.txte
+ create mode 100755 lorem-copy/sed.txt
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ git push
+Username for 'https://github.com': lucalfano
+Password for 'https://lucalfano@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/lucalfano/lab-bash.git/'
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ git add . 
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ git push
+Username for 'https://github.com': lucalfano
+Password for 'https://lucalfano@github.com': 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.44 KiB | 1.44 MiB/s, done.
+Total 6 (delta 2), reused 2 (delta 1), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/lucalfano/lab-bash.git
+   689f07d..1dd2a53  master -> master
+(base) Lucas-MacBook-Pro:lab-bash lucaalfano$ 
