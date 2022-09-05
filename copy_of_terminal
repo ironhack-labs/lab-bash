@@ -1,0 +1,138 @@
+(base) elifs-MacBook-Air-2:~ elifyildirim$ cd IH-Labs
+(base) elifs-MacBook-Air-2:IH-Labs elifyildirim$ ls
+(base) elifs-MacBook-Air-2:IH-Labs elifyildirim$ git clone https://github.com/elifcyildirim/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 40 (delta 14), reused 10 (delta 10), pack-reused 17
+Unpacking objects: 100% (40/40), done.
+(base) elifs-MacBook-Air-2:IH-Labs elifyildirim$ ls
+lab-bash
+(base) elifs-MacBook-Air-2:IH-Labs elifyildirim$ cd lab-bash
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+exercices	lorem		outputs
+inputs		lorem-copy	readme.md
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ echo 'Hello World'
+Hello World
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ mkdir new_dir
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+exercices	lorem		new_dir		readme.md
+inputs		lorem-copy	outputs
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ git add .
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ rmdir new_dir
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ cd lorem
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cp sed.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cp sed.txt /lorem-copy
+cp: /lorem-copy: Read-only file system
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cp sed.txt /Users/elifyildirim/IH-Labs/lab-bash/lorem-copy
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cp at.txt; lorem.txt /Users/elifyildirim/IH-Labs/lab-bash/lorem-copy
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+-bash: lorem.txt: command not found
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ at.txt lorem.txt /Users/elifyildirim/IH-Labs/lab-bash/lorem-copy
+-bash: at.txt: command not found
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ at.txt; lorem.txt /Users/elifyildirim/IH-Labs/lab-bash/lorem-copy
+-bash: at.txt: command not found
+-bash: lorem.txt: command not found
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ at.txt lorem.txt /Users/elifyildirim/IH-Labs/lab-bash/lorem-copy
+-bash: at.txt: command not found
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cp at.txt lorem.txt /Users/elifyildirim/IH-Labs/lab-bash/lorem-copy
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cd lorem-copy
+-bash: cd: lorem-copy: No such file or directory
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cd IH-lABS
+-bash: cd: IH-lABS: No such file or directory
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cd IH-Labs
+-bash: cd: IH-Labs: No such file or directory
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cd lorem-copy
+-bash: cd: lorem-copy: No such file or directory
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cat lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.(base) elifs-MacBook-Air-2:lorem elifyildirim$ cd lorem
+-bash: cd: lorem: No such file or directory
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cd lorem-copy
+-bash: cd: lorem-copy: No such file or directory
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cd /Users/elifyildirim/IH-Labs/lab-bash/lorem-copy
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ head sed.txt -3
+==> sed.txt <==
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+head: -3: No such file or directory
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ head -3 rhyme.txt | 
+> while read a; do
+>   echo $a; 
+> 
+> head -3 rhyme.txt |  while read a; do   echo $a; 
+> (base) elifs-MacBook-Air-2:lorem elifyildirim$ cd lorem-copy
+-bash: syntax error near unexpected token `elifs-MacBook-Air-2:lorem'
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ head -n 3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ tail -n 3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ cd /Users/elifyildirim/IH-Labs/lab-bash/lorem-copy
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ echo "Homo homini lupus." > sed.txt
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ tail -n 3 sed.txt
+Homo homini lupus.
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ 
