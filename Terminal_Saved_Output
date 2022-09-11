@@ -1,0 +1,220 @@
+Last login: Sun Sep 11 19:37:49 on ttys001
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) elifs-MacBook-Air-2:lab-customer-analysis-round-2 elifyildirim$ pwd
+/Users/elifyildirim/Desktop/IronHack/IH-Labs/lab-customer-analysis-round-2
+(base) elifs-MacBook-Air-2:lab-customer-analysis-round-2 elifyildirim$ cd ..
+(base) elifs-MacBook-Air-2:IH-Labs elifyildirim$ ls
+IronElif			lab-bash copy
+IronLalo			lab-customer-analysis-round-1
+lab-bash			lab-customer-analysis-round-2
+(base) elifs-MacBook-Air-2:IH-Labs elifyildirim$ cd lab-bash
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+copy_of_terminal	lorem			readme.md
+exercices		lorem-copy
+inputs			outputs
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ echo 'Hello World'
+Hello World
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ mkdir new_dir
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+copy_of_terminal	lorem			outputs
+exercices		lorem-copy		readme.md
+inputs			new_dir
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ rmdir new_dir
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+copy_of_terminal	lorem			readme.md
+exercices		lorem-copy
+inputs			outputs
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ cd lorem
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cp -R sed.txt /Users/elifyildirim/IH-Labs/lab-bash/lorem-copy
+cp: /Users/elifyildirim/IH-Labs/lab-bash/lorem-copy: No such file or directory
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cp -R sed.txt /Users/elifyildirim/Desktop/IronHack/IH-Labs/lab-bash
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cp -R sed.txt /Users/elifyildirim/Desktop/IronHack/IH-Labs/lab-bash/lorem-copy
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ la
+-bash: la: command not found
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cp -R at.txt lorem.txt /Users/elifyildirim/Desktop/IronHack/IH-Labs/lab-bash/lorem-copy
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ pwd
+/Users/elifyildirim/Desktop/IronHack/IH-Labs/lab-bash/lorem
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cd ..
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+copy_of_terminal	lorem			readme.md
+exercices		lorem-copy		sed.txt
+inputs			outputs
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ cd lorem-copy
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ cd ..
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ pwd
+/Users/elifyildirim/Desktop/IronHack/IH-Labs/lab-bash
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+copy_of_terminal	lorem			readme.md
+exercices		lorem-copy		sed.txt
+inputs			outputs
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ cd lorem
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cat lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.(base) elifs-MacBook-Air-2:lorem elifyildirim$ cd ..
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ cd lorem-copy
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ head sed.txt -3
+==> sed.txt <==
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+head: -3: No such file or directory
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ echo 'Homo homini lupus'>>sed.txt
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ tail -1 sed.txt
+Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ tail -2 sed.txt
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ tail -3 sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ pwd
+/Users/elifyildirim/Desktop/IronHack/IH-Labs/lab-bash/lorem-copy
+(base) elifs-MacBook-Air-2:lorem-copy elifyildirim$ cd ..
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ pwd
+/Users/elifyildirim/Desktop/IronHack/IH-Labs/lab-bash
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ cd lorem
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ sed 's/et/ET/g' sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis ET quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amET, consectETur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore ET dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ sed 's/ET/et/g' sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ sed 's/et /ET ' sed.txt
+sed: 1: "s/et /ET ": unterminated substitute in regular expression
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ sed 's/et /ET /g' sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis ET quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore ET dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ echo "$USER"
+elifyildirim
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ pwd
+/Users/elifyildirim/Desktop/IronHack/IH-Labs/lab-bash/lorem
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ find . -type f -name "*.txt"
+./at.txt
+./lorem.txt
+./sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cat sed.txt | wc -l
+       9
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) elifs-MacBook-Air-2:lorem elifyildirim$ cd ..
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+copy_of_terminal	lorem			readme.md
+exercices		lorem-copy		sed.txt
+inputs			outputs
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ find . -type f -name "lorem*.txt" | wc -l
+       2
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ read var
+elif
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ echo var
+var
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ echo $var
+elif
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ mkdir $var
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+copy_of_terminal	inputs			outputs
+elif			lorem			readme.md
+exercices		lorem-copy		sed.txt
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ cd ..
+(base) elifs-MacBook-Air-2:IH-Labs elifyildirim$ ls
+IronElif			lab-bash copy
+IronLalo			lab-customer-analysis-round-1
+lab-bash			lab-customer-analysis-round-2
+(base) elifs-MacBook-Air-2:IH-Labs elifyildirim$ cd lab-bash
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+copy_of_terminal	inputs			outputs
+elif			lorem			readme.md
+exercices		lorem-copy		sed.txt
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ rmdir $var
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ pwd
+/Users/elifyildirim/Desktop/IronHack/IH-Labs/lab-bash
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ ls
+copy_of_terminal	lorem			readme.md
+exercices		lorem-copy		sed.txt
+inputs			outputs
+(base) elifs-MacBook-Air-2:lab-bash elifyildirim$ 
