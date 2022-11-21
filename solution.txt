@@ -1,0 +1,12 @@
+in lab-bash:
+
+git add .
+
+then check
+git status
+
+saves locally in computer
+git commit -m "first lab"
+
+push to github
+git push
