@@ -12,18 +12,13 @@
 11. lorem-copy % tail -n 3 sed.txt
 12. lorem % sed 's/ET/et/' at.txt
 13. % whoami
-14. 
-15.
-16.
-17.
+14. % pwd
+15. % ls -l *.txt
+16. % wc -l sed.txt #missing cat
+17. 
 
 
 
 
-14. Find the current path of the directory you are in.
-15. List all files with the extension `.txt` in lorem folder.
 16. Count the rows in `sed.txt` file from lorem folder. Look concatenate `cat` and `wc` with the pipe `|`.
 17. Count the **files** which start with `lorem` in all directories.
-
-
-ls *.txt | wc -l
