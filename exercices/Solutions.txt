@@ -4,35 +4,26 @@
 3. rmdir new_dir
 4. lorem % cp sed.txt /Users/albertlleidaestival/IH-Labs/lab-bash/lorem-copy
 5. lorem % cp at.txt /Users/albertlleidaestival/IH-Labs/lab-bash/lorem-copy; cp lorem.txt /Users/albertlleidaestival/IH-Labs/lab-bash/lorem-copy
-6.albertlleidaestival@MacBook-Pro-de-Albert-2 lorem % cat sed.txt
-7.albertlleidaestival@MacBook-Pro-de-Albert-2 lorem % cat at.txt ; cat lorem.txt
-8.albertlleidaestival@MacBook-Pro-de-Albert-2 lorem-copy % head -n 3 sed.txt
-9.albertlleidaestival@MacBook-Pro-de-Albert-2 lorem-copy % tail -n 3 sed.txt
-10.
-11.
-12.
-13.
-14.
+6. lorem % cat sed.txt
+7. lorem % cat at.txt ; cat lorem.txt
+8. lorem-copy % head -n 3 sed.txt
+9. lorem-copy % tail -n 3 sed.txt
+10. lorem-copy % echo "Homo homini lupus">>sed.txt
+11. lorem-copy % tail -n 3 sed.txt
+12. lorem % sed 's/ET/et/' at.txt
+13. % whoami
+14. 
 15.
 16.
 17.
 
 
-1. Using the echo command print in console "Hello World". Here is some info about echo command [https://discuss.codecademy.com/t/what-are-practical-uses-of-the-echo-command/394788]
-2. Create a new directory called `new_dir`.
-3. Delete/Remove the directory `new_dir`.
-4. Copy the file `sed.txt` from the `lorem` folder and paste it to the folder `lorem-copy` folder.
-5. Copy the other two files from the `lorem folder` to `lorem-copy` folder in just one line using semicolon `;`.
-6. Show the `sed.txt` file content from the `lorem` folder.
-7. Show the `at.txt` file and `lorem.txt` file contents from `lorem` folder.
-8. Print the first 3 rows in `sed.txt` file from lorem-copy folder.
-9. Print the last 3 rows in `sed.txt` file from lorem-copy folder.
-10. Add `Homo homini lupus.` at the end of `sed.txt` file in the `lorem-copy` folder.
-11. Print the last 3 rows in `sed.txt` file from `lorem-copy` folder. You should see `Homo homini lupus.`.
-12. `sed` command is used to replace the text in a file. Use the `sed` command to replace all occurances of `et` with `ET` in the file `at.txt` file present in the folder `lorem`. You can use the following link to refer to `sed` commands [https://www.linode.com/docs/guides/manipulate-text-from-the-command-line-with-sed/]
-Check the contents of the sed.txt file using `cat` command.
-13. Find who is the system user. 
+
+
 14. Find the current path of the directory you are in.
 15. List all files with the extension `.txt` in lorem folder.
 16. Count the rows in `sed.txt` file from lorem folder. Look concatenate `cat` and `wc` with the pipe `|`.
 17. Count the **files** which start with `lorem` in all directories.
+
+
+ls *.txt | wc -l
