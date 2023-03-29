@@ -1,8 +1,73 @@
-Using the echo command print in console "Hello World". Here is some info about echo command
+Exercises
+Using the echo command print in console "Hello World". Here is some info about echo command [https://discuss.codecademy.com/t/what-are-practical-uses-of-the-echo-command/394788]
+
+echo "Hello World" 
+
+Create a new directory called new_dir.
+
+mkdir new_dir
+
+Delete/Remove the directory new_dir.
+
+rm -r new_dir
+
+Copy the file sed.txt from the lorem folder and paste it to the folder lorem-copy folder.
+
+ cp lorem/sed.txt lorem-copy/
+
+Copy the other two files from the lorem folder to lorem-copy folder in just one line using semicolon ;.
+
+cp lorem/at.txt lorem/at.txte lorem-copy/;
+
+Show the sed.txt file content from the lorem folder.
+
+cat lorem/sed.txt
+
+Show the at.txt file and lorem.txt file contents from lorem folder.
+
+cat at.txt lorem.txt
+
+Print the first 3 rows in sed.txt file from lorem-copy folder.
+
+head -n 3 lorem-copy/sed.txt
+
+Print the last 3 rows in sed.txt file from lorem-copy folder.
+
+tail -n 3 lorem-copy/sed.txt
+	
+Add Homo homini lupus. at the end of sed.txt file in the lorem-copy folder.
+
+echo "Homo homini lupus." >> lorem-copy/sed.txt
+
+Print the last 3 rows in sed.txt file from lorem-copy folder. You should see Homo homini lupus..
+
+ tail -n 3 sed.txt
+
+sed command is used to replace the text in a file. Use the sed command to replace all occurances of et with ET in the file at.txt file present in the folder lorem. You can use the following link to refer 
 
 
-Your Solution 
 
-echo "Hello World"
+to sed commands [https://www.linode.com/docs/guides/manipulate-text-from-the-command-line-with-sed/] Check the contents of the sed.txt file using cat command.
+
+sed -i 's/et/ET/g' at.txt
+
+Find who is the system user.
+
+whoami
+
+Find the current path of the directory you are in.
+
+pwd
+
+List all files with the extension .txt in lorem folder.
+
+ls -l *.txt
 
 
+Count the rows in sed.txt file from lorem folder. Look concatenate cat and wc with the pipe |.
+
+cat lorem/sed.txt | wc -l
+
+Count the files which start with lorem in all directories.
+
+find / -type f -name 'lorem*' | wc -l
