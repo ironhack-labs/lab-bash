@@ -1,0 +1,303 @@
+Microsoft Windows [Versión 10.0.22621.1992]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\sanch>get clone https://github.com/Magie594/lab-bash.git
+"get" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch>
+
+C:\Users\sanch>git hub https://github.com/Magie594/lab-bash.git
+git: 'hub' is not a git command. See 'git --help'.
+
+The most similar command is
+        gui
+
+C:\Users\sanch>git clone https://github.com/Magie594/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+Receiving objects:  37% (15/40)sed 0 (delta 0), pack-reused 40
+Receiving objects: 100% (40/40), 12.63 KiB | 6.31 MiB/s, done.
+Resolving deltas: 100% (11/11), done.
+
+C:\Users\sanch>ls
+"ls" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch>mkdir_labs
+"mkdir_labs" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch>mkdir labs
+
+C:\Users\sanch>cd labs
+
+C:\Users\sanch\labs>git clone https://github.com/Magie594/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Total 40 (delta 0), reused 0 (delta 0), pack-reused 40Receiving objects:  22% (9/40)
+Receiving objects: 100% (40/40), 12.63 KiB | 6.31 MiB/s, done.
+Resolving deltas: 100% (11/11), done.
+
+C:\Users\sanch\labs>ls
+"ls" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs>dir
+ El volumen de la unidad C es Windows-SSD
+ El número de serie del volumen es: 7683-8EE4
+
+ Directorio de C:\Users\sanch\labs
+
+31/07/2023  12:16    <DIR>          .
+31/07/2023  12:16    <DIR>          ..
+31/07/2023  12:17    <DIR>          lab-bash
+               0 archivos              0 bytes
+               3 dirs  413.281.972.224 bytes libres
+
+C:\Users\sanch\labs>cd lab-bash
+
+C:\Users\sanch\labs\lab-bash>dir
+ El volumen de la unidad C es Windows-SSD
+ El número de serie del volumen es: 7683-8EE4
+
+ Directorio de C:\Users\sanch\labs\lab-bash
+
+31/07/2023  12:17    <DIR>          .
+31/07/2023  12:16    <DIR>          ..
+31/07/2023  12:17             6.148 .DS_Store
+31/07/2023  12:17    <DIR>          .github
+31/07/2023  12:17    <DIR>          exercices
+31/07/2023  12:17    <DIR>          inputs
+31/07/2023  12:17    <DIR>          lorem
+31/07/2023  12:17    <DIR>          lorem-copy
+31/07/2023  12:17    <DIR>          outputs
+31/07/2023  12:17             2.597 readme.md
+               2 archivos          8.745 bytes
+               8 dirs  413.281.607.680 bytes libres
+
+C:\Users\sanch\labs\lab-bash>"hello World"
+""hello World"" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs\lab-bash>echo "hello world"
+"hello world"
+
+C:\Users\sanch\labs\lab-bash>new-dir
+"new-dir" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs\lab-bash>cd new-dir
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\sanch\labs\lab-bash>mk dir
+"mk" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs\lab-bash>mk dir new_dir
+"mk" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs\lab-bash>mkdir new_dir
+
+C:\Users\sanch\labs\lab-bash>rmdir new_dir
+
+C:\Users\sanch\labs\lab-bash> cp sed.txt copied
+"cp" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs\lab-bash>mkdir copied-files
+
+C:\Users\sanch\labs\lab-bash>rmdir copied-files
+
+C:\Users\sanch\labs\lab-bash>mkdir lorem-sed.txt
+
+C:\Users\sanch\labs\lab-bash>mkdir copy lorem-sed.txt
+Ya existe el subdirectorio o el archivo lorem-sed.txt.
+Error mientras se procesaba: lorem-sed.txt.
+
+C:\Users\sanch\labs\lab-bash>mkdir paste lorem-sed.txt lorem
+Ya existe el subdirectorio o el archivo lorem-sed.txt.
+Error mientras se procesaba: lorem-sed.txt.
+Ya existe el subdirectorio o el archivo lorem.
+Error mientras se procesaba: lorem.
+
+C:\Users\sanch\labs\lab-bash>new-dir
+"new-dir" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs\lab-bash>mkdir new_dir
+
+C:\Users\sanch\labs\lab-bash>cd new_dir
+
+C:\Users\sanch\labs\lab-bash\new_dir>rm new-dir
+"rm" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs\lab-bash\new_dir>cd lab-lash
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\sanch\labs\lab-bash\new_dir>cd lab-bash
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\sanch\labs\lab-bash\new_dir>rm -rf new-dir
+"rm" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs\lab-bash\new_dir>rmdir new_dir
+El sistema no puede encontrar el archivo especificado.
+
+C:\Users\sanch\labs\lab-bash\new_dir>
+C:\Users\sanch\labs\lab-bash\new_dir>rm new_dir
+"rm" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs\lab-bash\new_dir>rmdir new_dir
+El sistema no puede encontrar el archivo especificado.
+
+C:\Users\sanch\labs\lab-bash\new_dir>cd lab-bash
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\sanch\labs\lab-bash\new_dir>rmdir /s new_dir
+new_dir, ¿Está seguro (S/N)? s
+El sistema no puede encontrar el archivo especificado.
+
+C:\Users\sanch\labs\lab-bash\new_dir>cd lab-bash
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\sanch\labs\lab-bash\new_dir> cd c
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\sanch\labs\lab-bash\new_dir>cd c:
+C:\Users\sanch\labs\lab-bash\new_dir
+
+C:\Users\sanch\labs\lab-bash\new_dir>rmdir /s /q new_dir
+El sistema no puede encontrar el archivo especificado.
+
+C:\Users\sanch\labs\lab-bash\new_dir>dir
+ El volumen de la unidad C es Windows-SSD
+ El número de serie del volumen es: 7683-8EE4
+
+ Directorio de C:\Users\sanch\labs\lab-bash\new_dir
+
+31/07/2023  13:37    <DIR>          .
+31/07/2023  13:37    <DIR>          ..
+               0 archivos              0 bytes
+               2 dirs  413.223.571.456 bytes libres
+
+C:\Users\sanch\labs\lab-bash\new_dir>cd C:\Users\sanch\labs\lab-bash
+
+C:\Users\sanch\labs\lab-bash>rmdir new_dir
+
+C:\Users\sanch\labs\lab-bash>dir
+ El volumen de la unidad C es Windows-SSD
+ El número de serie del volumen es: 7683-8EE4
+
+ Directorio de C:\Users\sanch\labs\lab-bash
+
+31/07/2023  14:40    <DIR>          .
+31/07/2023  12:16    <DIR>          ..
+31/07/2023  12:17             6.148 .DS_Store
+31/07/2023  12:17    <DIR>          .github
+31/07/2023  13:18    <DIR>          copy
+31/07/2023  12:17    <DIR>          exercices
+31/07/2023  12:17    <DIR>          inputs
+31/07/2023  12:17    <DIR>          lorem
+31/07/2023  12:17    <DIR>          lorem-copy
+31/07/2023  13:14    <DIR>          lorem-sed.txt
+31/07/2023  12:17    <DIR>          outputs
+31/07/2023  13:24    <DIR>          paste
+31/07/2023  12:17             2.597 readme.md
+               2 archivos          8.745 bytes
+              11 dirs  413.223.362.560 bytes libres
+
+C:\Users\sanch\labs\lab-bash>cd
+C:\Users\sanch\labs\lab-bash
+
+C:\Users\sanch\labs\lab-bash>copy lorem/sed.txt lorem-copy/
+La sintaxis del comando no es correcta.
+
+C:\Users\sanch\labs\lab-bash>cp lorem/sed.txt lorem-copy/
+"cp" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\sanch\labs\lab-bash>copy lorem\sed.txt lorem-copy\
+        1 archivo(s) copiado(s).
+
+C:\Users\sanch\labs\lab-bash>copy lorem\lorem.txt;at.txte;at.txt lorem-copy\
+La sintaxis del comando no es correcta.
+
+C:\Users\sanch\labs\lab-bash>copy lorem\lorem.txt\at.txte\at.txt lorem-copy\
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\sanch\labs\lab-bash>copy lorem\lorem.txt lorem;at.txte;at.txt lorem-copy\
+La sintaxis del comando no es correcta.
+
+C:\Users\sanch\labs\lab-bash>copy lorem\'lorem.txt', lorem\'at.txt', lorem\'at.txt', lorem-copy\
+El sistema no puede encontrar el archivo especificado.
+
+C:\Users\sanch\labs\lab-bash>copy lorem\lorem.txt lorem\at.txt lorem\at.txt lorem-copy\
+La sintaxis del comando no es correcta.
+
+C:\Users\sanch\labs\lab-bash>copy lorem\lorem.txt lorem\at.txt lorem\at.txt lorem-copy\
+La sintaxis del comando no es correcta.
+
+C:\Users\sanch\labs\lab-bash>copy lorem\at.txt; lorem.txt lorem-copy\
+La sintaxis del comando no es correcta.
+
+C:\Users\sanch\labs\lab-bash>copy lorem\at.txt;lorem.txt lorem-copy\
+La sintaxis del comando no es correcta.
+
+C:\Users\sanch\labs\lab-bash>copy lorem\at.txt lorem-copy\ ; copy lorem\lorem.txt lorem-copy\
+La sintaxis del comando no es correcta.
+
+C:\Users\sanch\labs\lab-bash>copy lorem\at.txt lorem-copy\ & copy lorem\lorem.txt lorem-copy\
+        1 archivo(s) copiado(s).
+        1 archivo(s) copiado(s).
+
+C:\Users\sanch\labs\lab-bash>type lorem\sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+C:\Users\sanch\labs\lab-bash>type lorem\at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+C:\Users\sanch\labs\lab-bash>type lorem\lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+C:\Users\sanch\labs\lab-bash>more +1 lorem-copy\sed.txt
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+C:\Users\sanch\labs\lab-bash>more /S +8 lorem-copy\sed.txt
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+C:\Users\sanch\labs\lab-bash>echo Homo homini lupus. >> lorem-copy\sed.txt
+
+C:\Users\sanch\labs\lab-bash>C:\Users\sanch\labs\lab-bash>more /S +8 lorem-copy\sed.txt
+"C:\Users\sanch\labs\lab-bash" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
