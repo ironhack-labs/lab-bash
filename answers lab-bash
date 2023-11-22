@@ -1,0 +1,62 @@
+1- Using the echo command print in console "Hello World". Here is some info about echo command [https://discuss.codecademy.com/t/what-are-practical-uses-of-the-echo-command/394788]
+command_for_question_1_is echo as "Hello World"
+
+2- Create a new directory called new_dir.
+command_for_question_2_is mkdir new_dir
+
+3- Delete/Remove the directory new_dir.
+command_for_question_3_is rm -rf new_dir
+
+4- Copy the file sed.txt from the lorem folder and paste it to the folder lorem-copy folder.
+command_for_question_4_is mkdir lorem_copy then cp lorem/sed.txt lorem_copy
+
+5- Copy the other two files from the lorem folder to lorem-copy folder in just one line using semicolon ; 
+command_for_question_5 is $ cp lorem/lorem.txt lorem_copy; cp lorem/at.txte lorem_copy
+
+6- Show the sed.txt file content from the lorem folder.
+command_for_question_6_is cat lorem/sed.txt
+
+7- Show the at.txt file and lorem.txt file contents from lorem folder.
+command_for_question_7_is cat lorem/at.txt
+
+8- Print the first 3 rows in sed.txt file from lorem-copy folder.
+command_for_question_8_is head -3 lorem_copy/sed.txt
+
+9- Print the last 3 rows in sed.txt file from lorem-copy folder.
+command_for_question_9_is tail -3 lorem_copy/sed.txt
+
+10- Add Homo homini lupus. at the end of sed.txt file in the lorem-copy folder.
+command_for_question_10_is echo "Homo homini lupus" >> lorem_copy/sed.txt
+
+11- Print the last 3 rows in sed.txt file from lorem-copy folder. You should see Homo homini lupus..
+command_for_question_11_is tail -3 lorem_copy/sed.txt
+
+12- sed command is used to replace the text in a file. Use the sed command to replace all occurances of et with ET in the file at.txt file present in the folder lorem. You can use the following link to refer to sed commands [https://www.linode.com/docs/guides/manipulate-text-from-the-command-line-with-sed/] Check the contents of the sed.txt file using cat command.
+command_for_question_12_is sed 's/et/ET/' lorem/at.txt
+
+13- Find who is the system user.
+command_for_question_13_is whoami
+
+14- Find the current path of the directory you are in.
+command_for_question_14_is pwd
+
+15- List all files with the extension .txt in lorem folder.
+command_for_question_15_is ls lorem/*.txt
+
+16- Count the rows in sed.txt file from lorem folder. Look concatenate cat and wc with the pipe |.
+command_for_question_16_is cat lorem/sed.txt | wc -l lorem/sed.txt
+
+17- Count the files which start with lorem in all directories.
+command_for_question_17_is ls -l lorem*/lorem* | wc -l
+
+20- Store your name in a variable with read command. 
+command_for_question_20_is read var1 #input Natalia.
+
+21- Print that variable
+command_for_question_21_is echo $var1 #output Natalia
+
+22- Create a new directory named with variable name.
+command_for_question_22_is mkdir $var1
+
+23- Remove that directory
+command_for_question_23_is rm -rf Natalia or also: rm -rf $var1
