@@ -1,0 +1,74 @@
+1. Print in console "Hello World"
+	echo "Hello World"
+
+2. Create a directory called `new_dir`
+	mkdir new_dir
+
+3. Remove that directory.
+	rm -m new_dir
+
+4. Copy the file `sed.txt` from the `lorem` folder to `lorem-copy` folder.
+	git mv lorem/sed.txt lorem-copy/
+	git commit -m"Move sed.txt from lorem to lorem-copy"
+
+5. Copy the other two files from the `lorem folder` to `lorem-copy` folder in just one line with the pipe `;`.
+	git mv lorem/at.txt lorem/lorem.txt lorem-copy/;
+	echo "files moved successfully"
+
+ 6. Show the `sed.txt` file content from the `lorem` folder
+	cat lorem/sed.txt
+
+ 7. Show the `at.txt` file and `lorem.txt` file contents from `lorem` folder.
+ 	cat lorem/at.txt lorem/lorem.txt
+
+8. Print the first 3 rows in `sed.txt` file from lorem-copy folder.
+	head -n 3 lorem-copy/sed.txt
+
+9. Print the last 3 rows in `sed.txt` file from lorem-copy folder.
+	tail -n 3 lorem-copy/sed.txt
+
+10. Add `Homo homini lupus.` at the end of `sed.txt` file from `lorem-copy` folder.
+	echo "Homo homini lupus" >> lorem-copy/sed.txt
+
+11. Print the last 3 rows in `sed.txt` file from `lorem-copy` folder. You should see `Homo homini lupus.`.
+	 tail -n 3 lorem-copy/sed.txt
+
+12. Replace all `et` repetitions by `ET` in `at.txt` file from lorem folder to lorem-copy folder. Look the `sed` command.
+	sed -i 's/et/ET/g' lorem-copy/sed.txt
+
+13. Find who is the system user.
+	whoami
+
+14. Find which is your actual path.
+	git rev-parse --show-toplevel
+
+15. List all files with the extension `.txt` in lorem folder.
+	git ls-files *.txt
+
+16. Count the rows in `sed.txt` file from lorem folder. Look concatenate `cat` and `wc` with the pipe `|`.
+
+17. Count the **files** start with `lorem` in all directories.
+	cat lorem/sed.txt | wc -1
+
+18. Count how many times `et` appears in `at.txt` from `lorem` folder.
+	git show mean:lorem/at.txt | grep -o 'et' | wc -l
+
+19. Count how many times `et` appears in `at.txt` from `lorem-copy` folder.	
+	git show mean:lorem-copy/at.txt | grep -o 'et' | wc -l
+
+
+20. Store your `name` in a variable with `read` command.
+	echo "Enter your name:"
+	read my_name
+
+21. Print that variable.
+	my_name="Priyanka"
+	echo "Your name is: Priyanka"
+
+22. Create a new directory named with variable `name`.
+	mkdir "Priyanka"
+
+23. Remove that directory.
+	rmdir "Priyanka"
+	
+24. For each file in `lorem` folder, print the number of characters of its name.
